@@ -1,0 +1,18 @@
+.list-cell:selected{
+	-fx-background-color: rgb(180,24,50);
+	-fx-font-size: 13;
+}
+.list-cell .jfx.rippler{
+	-fx-rippler-fill:red;
+}
+.list-cell:hover{
+	-fx-font-size: 13;
+}
+.list-cell{
+	-fx-background-insets: 0.0;
+}
+.list-view{
+	-fx-background-insets: 0.0;
+	-fx-cell-vertical-margin:10.0;
+	-fx-vertical-gap: 10; 	
+}

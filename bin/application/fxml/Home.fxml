@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.HomeController">
+   <children>
+      <StackPane fx:id="stkPane" layoutX="-3.0" layoutY="-3.0" prefHeight="625.0" prefWidth="1000.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="677.0" prefWidth="1000.0">
+               <children>
+                  <Pane layoutX="727.0" layoutY="2.0" prefHeight="674.0" prefWidth="271.0" style="-fx-background-color: #b51832;" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                     <children>
+                        <Pane id="bar" prefHeight="36.0" prefWidth="271.0" style="-fx-background-color: #ba2e45;" stylesheets="@../application.css">
+                           <children>
+                              <JFXButton fx:id="close" layoutX="232.0" layoutY="4.0" onAction="#close_min_logout" opacity="0.57" style="-fx-background-color: white; -fx-background-radius: 50;" text="X" textFill="#ba2e45">
+                                 <font>
+                                    <Font name="Californian FB" size="16.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect>
+                              </JFXButton>
+                              <JFXButton fx:id="min" contentDisplay="GRAPHIC_ONLY" layoutX="190.0" layoutY="4.0" onAction="#close_min_logout" opacity="0.57" prefHeight="31.0" prefWidth="33.0" style="-fx-background-color: white; -fx-background-radius: 50;" textFill="#bf364f">
+                                 <font>
+                                    <Font name="Californian FB" size="16.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="15.0" fitWidth="11.0">
+                                       <image>
+                                          <Image url="@../imgs/Minus.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                        <Pane id="menu" layoutX="25.0" layoutY="51.0" prefHeight="572.0" prefWidth="223.0" stylesheets="@../application.css">
+                           <children>
+                              <Text fill="WHITE" layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="مدارس المعالي والنيل">
+                                 <font>
+                                    <Font name="Bodoni MT Black" size="21.0" />
+                                 </font>
+                                 <rotationAxis>
+                                    <Point3D x="1.0" z="1.0" />
+                                 </rotationAxis>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </Text>
+                              <Text fill="WHITE" layoutX="41.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="الثانوية الخاصة" wrappingWidth="133.6103515625">
+                                 <font>
+                                    <Font name="Bodoni MT Black" size="21.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </Text>
+                              <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="87.0" layoutY="78.2568359375">
+                                 <image>
+                                    <Image url="@../imgs/WebMone.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXButton fx:id="managers" contentDisplay="TOP" graphicTextGap="10.0" layoutY="120.0" onAction="#mainMenu" prefHeight="77.0" prefWidth="84.0" text="إضافة مدير" textFill="WHITE">
+                                 <font>
+                                    <Font name="Bodoni MT Condensed Italic" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView>
+                                       <image>
+                                          <Image url="@../imgs/Add_Administrator.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton fx:id="accounting" contentDisplay="TOP" graphicTextGap="10.0" layoutX="124.0" layoutY="120.0" onAction="#mainMenu" prefHeight="77.0" prefWidth="101.0" text="إضافة محاسب" textFill="WHITE">
+                                 <font>
+                                    <Font name="Bodoni MT Condensed Italic" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView>
+                                       <image>
+                                          <Image url="@../imgs/Add_Administrator.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton fx:id="builds" contentDisplay="TOP" graphicTextGap="10.0" layoutX="1.0" layoutY="207.0" onAction="#mainMenu" prefHeight="77.0" prefWidth="84.0" text="إضافة فرع" textFill="WHITE">
+                                 <font>
+                                    <Font name="Bodoni MT Condensed Italic" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView>
+                                       <image>
+                                          <Image url="@../imgs/Building.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton fx:id="requests" contentDisplay="TOP" graphicTextGap="10.0" layoutX="124.0" layoutY="207.0" onAction="#mainMenu" prefHeight="77.0" prefWidth="101.0" text="طلب الاستدعاء" textFill="WHITE">
+                                 <font>
+                                    <Font name="Bodoni MT Condensed Italic" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView>
+                                       <image>
+                                          <Image url="@../imgs/Add_Administrator.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton fx:id="Moneys" contentDisplay="TOP" graphicTextGap="10.0" layoutX="-4.0" layoutY="298.0" onAction="#mainMenu" prefHeight="77.0" prefWidth="94.0" text="تحديد الرسوم" textFill="WHITE">
+                                 <font>
+                                    <Font name="Bodoni MT Condensed Italic" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView>
+                                       <image>
+                                          <Image url="@../imgs/Money.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton fx:id="tacaleef" contentDisplay="TOP" graphicTextGap="10.0" layoutX="124.0" layoutY="296.0" onAction="#mainMenu" prefHeight="77.0" prefWidth="101.0" text="تحديد التكاليف" textFill="WHITE">
+                                 <font>
+                                    <Font name="Bodoni MT Condensed Italic" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView>
+                                       <image>
+                                          <Image url="@../imgs/Pricing.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton fx:id="Receipts" contentDisplay="TOP" graphicTextGap="10.0" layoutX="-1.0" layoutY="385.0" onAction="#mainMenu" prefHeight="77.0" prefWidth="94.0" text="التقارير المالية" textFill="WHITE">
+                                 <font>
+                                    <Font name="Bodoni MT Condensed Italic" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView>
+                                       <image>
+                                          <Image url="@../imgs/Receipt.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton fx:id="acadrep" contentDisplay="TOP" graphicTextGap="10.0" layoutX="115.0" layoutY="385.0" onAction="#mainMenu" prefHeight="77.0" prefWidth="110.0" text="التقارير الاكاديمية" textFill="WHITE">
+                                 <font>
+                                    <Font name="Bodoni MT Condensed Italic" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView>
+                                       <image>
+                                          <Image url="@../imgs/Graph.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton fx:id="Mawared" contentDisplay="TOP" graphicTextGap="10.0" layoutX="48.0" layoutY="476.0" onAction="#mainMenu" prefHeight="77.0" prefWidth="134.0" text="تقارير الموارد البشرية" textFill="WHITE">
+                                 <font>
+                                    <Font name="Bodoni MT Condensed Italic" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView>
+                                       <image>
+                                          <Image url="@../imgs/Tasks.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="2.0" prefHeight="37.0" prefWidth="725.0" style="-fx-background-color: #bf364f;" AnchorPane.bottomAnchor="638.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="273.0" AnchorPane.topAnchor="2.0">
+                     <children>
+                        <JFXButton fx:id="logout" contentDisplay="GRAPHIC_ONLY" layoutY="4.0" onAction="#close_min_logout" ripplerFill="#b51832" text="Button">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@../imgs/Logout.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <AnchorPane id="anc" fx:id="ancLoad" layoutX="2.0" layoutY="39.0" prefHeight="637.0" prefWidth="725.0" style="-fx-background-color: white; -fx-border-color: rgb(181,24,50); -fx-border-width: 0 0 6 6;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="273.0" AnchorPane.topAnchor="38.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </AnchorPane>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+</AnchorPane>

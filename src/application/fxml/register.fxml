@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="365.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.registerController">
+   <children>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="325.0" layoutY="4.0" onAction="#return_Back" prefHeight="29.0" prefWidth="36.0" ripplerFill="#ffffff00">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="23.0">
+               <image>
+                  <Image url="@../imgs/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="60.0" fitWidth="61.0" layoutX="32.0" layoutY="56.0">
+         <image>
+            <Image url="@../imgs/Children2.png" />
+         </image>
+      </ImageView>
+      <Text fill="#6f6c6c" layoutX="37.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wellcome Back">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#807e7e" layoutX="37.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign to continue" />
+      <JFXButton id="logbutt" layoutX="60.0" layoutY="456.0" onAction="#registeration" prefHeight="39.0" prefWidth="252.0" style="-fx-background-radius: 5;" stylesheets="@../application.css" text="تسجيل الدخول">
+         <font>
+            <Font name="Ebrima" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="userName" alignment="CENTER_RIGHT" focusColor="#b51832" labelFloat="true" layoutX="57.0" layoutY="205.0" prefHeight="27.0" prefWidth="252.0" promptText="إسم المستخدم">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" alignment="CENTER_RIGHT" focusColor="#b51832" labelFloat="true" layoutX="57.0" layoutY="251.0" prefHeight="27.0" prefWidth="252.0" promptText="كلمة المرور">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXTextField fx:id="fullName" alignment="CENTER_RIGHT" focusColor="#b51832" labelFloat="true" layoutX="57.0" layoutY="297.0" prefHeight="27.0" prefWidth="252.0" promptText="الإسم الرباعي">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="current_cap" alignment="CENTER_RIGHT" focusColor="#b51832" labelFloat="true" layoutX="57.0" layoutY="342.0" prefHeight="27.0" prefWidth="252.0" promptText="رأس المال الحالي">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXRadioButton fx:id="prim" layoutX="235.0" layoutY="415.0" style="-jfx-selected-color: #b51832;" text="إبتدائية">
+         <toggleGroup>
+            <ToggleGroup fx:id="choose" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="secondary" layoutX="47.0" layoutY="415.0" style="-jfx-selected-color: #b51832;" text="ثانوية" toggleGroup="$choose" />
+   </children>
+</Pane>

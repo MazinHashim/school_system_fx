@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="637.0" prefWidth="725.0" style="-fx-background-color: white; -fx-border-color: #b51832; -fx-border-width: 0 0 6 6;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MoneyController">
+   <children>
+      <VBox layoutX="131.0" layoutY="41.0" prefHeight="200.0" prefWidth="177.0" style="-fx-background-color: rgb(180,24,50); -fx-background-radius: 10;">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="140.0" prefWidth="177.0" text="السنة الثانية" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="second" alignment="CENTER" onKeyPressed="#isNumber" prefHeight="25.0" prefWidth="51.0" promptText="أدخل" style="-fx-focus-color: rgb(180,24,50);">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="50.0" right="50.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox layoutX="418.0" layoutY="41.0" prefHeight="200.0" prefWidth="177.0" style="-fx-background-color: rgb(180,24,50); -fx-background-radius: 10;">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="140.0" prefWidth="177.0" text="السنة الأولى" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="frist" alignment="CENTER" onKeyPressed="#isNumber" prefHeight="25.0" prefWidth="51.0" promptText="أدخل" style="-fx-focus-color: rgb(180,24,50);">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="50.0" right="50.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox layoutX="131.0" layoutY="294.0" prefHeight="200.0" prefWidth="177.0" style="-fx-background-color: rgb(180,24,50); -fx-background-radius: 10;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="BOTTOM" maxWidth="1.7976931348623157E308" prefHeight="140.0" prefWidth="177.0" text="السنة الثالثة" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <graphic>
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="86.0" text="(أدبي)" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </Label>
+            <TextField fx:id="thirdA" alignment="CENTER" onKeyPressed="#isNumber" prefHeight="25.0" prefWidth="51.0" promptText="أدخل" style="-fx-focus-color: rgb(180,24,50);">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="50.0" right="50.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox layoutX="418.0" layoutY="294.0" prefHeight="200.0" prefWidth="177.0" style="-fx-background-color: rgb(180,24,50); -fx-background-radius: 10;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="BOTTOM" maxWidth="1.7976931348623157E308" prefHeight="140.0" prefWidth="177.0" text="السنة الثالثة" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <graphic>
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="98.0" text="(علمي)" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </Label>
+            <TextField fx:id="third3" alignment="CENTER" onKeyPressed="#isNumber" prefHeight="25.0" prefWidth="51.0" promptText="أدخل" style="-fx-focus-color: rgb(180,24,50);">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="50.0" right="50.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </TextField>
+         </children>
+      </VBox>
+      <JFXButton id="addButton" contentDisplay="RIGHT" layoutX="309.0" layoutY="552.0" onAction="#insertMoney" prefHeight="44.0" prefWidth="108.0" style="-fx-border-color: #b51832; -fx-border-radius: 5;" stylesheets="@../application.css" text="إضافة" textFill="#b51832">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../imgs/Plus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="637.0" prefWidth="725.0" style="-fx-background-color: white; -fx-border-color: #b51832; -fx-border-width: 0 0 6 6;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AltacaleefController">
+   <children>
+      <JFXListView id="tacaleefList" fx:id="tacList" layoutX="79.0" layoutY="146.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="315.0" prefWidth="568.0">
+         <stylesheets>
+            <URL value="@../listview.css" />
+            <URL value="@../application.css" />
+         </stylesheets></JFXListView>
+      <JFXButton id="addButton" contentDisplay="RIGHT" layoutX="539.0" layoutY="509.0" onAction="#addActionButton" prefHeight="44.0" prefWidth="108.0" style="-fx-border-color: #b51832; -fx-border-radius: 5;" stylesheets="@../application.css" text="إضافة" textFill="#b51832">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../imgs/Plus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="textSear" alignment="CENTER_RIGHT" focusColor="#b51832" labelFloat="true" layoutX="79.0" layoutY="514.0" prefHeight="29.0" prefWidth="211.0" promptText="البحث" style="-fx-text-align: right;" unFocusColor="BLACK">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton id="addButton" contentDisplay="RIGHT" layoutX="409.0" layoutY="509.0" onAction="#deleteActionButton" prefHeight="44.0" prefWidth="108.0" style="-fx-border-color: #b51832; -fx-border-radius: 5;" stylesheets="@../application.css" text="حذف" textFill="#b51832">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../imgs/Trash.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="textAdd" alignment="CENTER_RIGHT" focusColor="#b51832" labelFloat="true" layoutX="359.0" layoutY="84.0" prefHeight="29.0" prefWidth="288.0" promptText="إضافة تكاليف جديدة" style="-fx-text-align: right;" unFocusColor="BLACK">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

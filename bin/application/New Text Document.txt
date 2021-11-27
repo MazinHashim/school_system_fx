@@ -1,0 +1,20 @@
+	TableColumn<user, String> nameCol = new TableColumn<>("Name");
+	nameCol.setPrefWidth(150);
+	nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
+	
+	TableColumn<user, Integer> idCol = new TableColumn<>("Id");
+	idCol.setPrefWidth(150);
+	idCol.setCellValueFactory(new PropertyValueFactory<>("id"));
+	
+	TableColumn<user, Double> salaryCol = new TableColumn<>("Salary");
+	salaryCol.setPrefWidth(150);
+	salaryCol.setCellValueFactory(new PropertyValueFactory<>("salary"));
+	
+	ObservableList<user> list = FXCollections.observableArrayList();
+	list.addAll(new user("Mazin",1,2000.0),
+				new user("Mazin",1,2000.0),
+				new user("Mazin",1,2000.0),
+				new user("Mazin",1,2000.0),
+				new user("Mazin",1,2000.0));
+	table.setItems(list);
+	table.getColumns().addAll(nameCol,idCol,salaryCol);

@@ -1,0 +1,47 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#menu JFXButton:hover{
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+#bar JFXButton:hover{
+    -fx-opacity:1;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+#forget:hover{
+    -fx-text-fill: #b51832;
+    -fx-underline:true;
+}
+#logbutt{
+    -fx-background-color: #b51832 ;
+    -fx-text-fill: white;
+}
+#logbutt:hover{
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-border-color: #b51832;
+    -fx-background-color: white;
+    -fx-text-fill: #b51832;
+}
+#menu JFXButton:focused{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: white;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+#addButton:hover{
+	-fx-border-width: 2 1 2 1;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+#tacaleefList{
+	-fx-border-color: rgb(180,24,50);
+	-fx-border-width: 3 3 3 3;
+	-fx-border-style: segments(12,5,10,33,70,20);
+	-fx-focus-color: rgb(180,24,50); 
+}
+#tacaleefList:selected{
+	-fx-background-color: rgb(180,24,50);
+}

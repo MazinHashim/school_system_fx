@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane id="panelog" fx:id="content_area" prefHeight="550.0" prefWidth="365.0" style="-fx-background-color: white;" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.SignInController">
+   <children>
+      <ImageView fitHeight="60.0" fitWidth="61.0" layoutX="32.0" layoutY="56.0">
+         <image>
+            <Image url="@../imgs/Children2.png" />
+         </image>
+      </ImageView>
+      <Text fill="#6f6c6c" layoutX="37.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wellcome Back">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#807e7e" layoutX="37.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign to continue" />
+      <JFXButton id="forget" layoutX="58.0" layoutY="332.0" ripplerFill="#fffffffe" stylesheets="@../application.css" text="هل نسيت كلمة السر؟" textFill="#807e7e" />
+      <JFXButton id="logbutt" layoutX="57.0" layoutY="395.0" onAction="#loginAction" prefHeight="39.0" prefWidth="252.0" style="-fx-background-radius: 5;" stylesheets="@../application.css" text="تسجيل الدخول">
+         <font>
+            <Font name="Ebrima" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="userName" alignment="CENTER_RIGHT" focusColor="#b51832" labelFloat="true" layoutX="57.0" layoutY="241.0" prefHeight="27.0" prefWidth="252.0" promptText="إسم المستخدم">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" alignment="CENTER_RIGHT" focusColor="#b51832" labelFloat="true" layoutX="57.0" layoutY="297.0" prefHeight="27.0" prefWidth="252.0" promptText="كلمة المرور">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXPasswordField>
+      <Text fill="#807e7e" layoutX="186.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="مستخدم جديد؟" />
+      <JFXButton layoutX="107.0" layoutY="468.0" onAction="#registration_form" ripplerFill="#ffffff00" text="إنشاء حساب" textFill="#b51832" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</Pane>

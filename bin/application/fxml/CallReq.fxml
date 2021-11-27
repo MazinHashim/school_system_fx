@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="637.0" prefWidth="725.0" style="-fx-background-color: white; -fx-border-color: #b51832; -fx-border-width: 0 0 6 6;" stylesheets="@../TableViewCss.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.CallReqController">
+   <children>
+      <JFXButton id="addButton" contentDisplay="RIGHT" layoutX="543.0" layoutY="478.0" onAction="#CallManagerAction" prefHeight="44.0" prefWidth="119.0" style="-fx-border-color: #b51832; -fx-border-radius: 5;" stylesheets="@../application.css" text="إستدعاء" textFill="#b51832">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../imgs/Plus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="searchCall" alignment="CENTER_RIGHT" focusColor="#b51832" labelFloat="true" layoutX="62.0" layoutY="493.0" prefHeight="28.0" prefWidth="219.0" promptText="البحث" style="-fx-text-align: right;" unFocusColor="BLACK">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <TableView fx:id="tableCall" layoutX="60.0" layoutY="116.0" prefHeight="335.0" prefWidth="602.0" />
+   </children>
+</AnchorPane>

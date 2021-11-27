@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="637.0" prefWidth="725.0" style="-fx-background-color: white; -fx-border-color: #b51832; -fx-border-width: 0 0 6 6;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.HumRepController">
+   <children>
+      <TableView fx:id="tableTech" layoutX="63.0" layoutY="41.0" prefHeight="251.0" prefWidth="600.0" stylesheets="@../TableViewCss.css" />
+      <TableView fx:id="tableWork" layoutX="63.0" layoutY="346.0" prefHeight="251.0" prefWidth="600.0" stylesheets="@../TableViewCss.css" />
+      <Label fx:id="labTech" alignment="CENTER_RIGHT" layoutX="549.0" layoutY="11.0" text="عدد المعلمين : " textFill="#b41832">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labWork" alignment="CENTER_RIGHT" layoutX="564.0" layoutY="316.0" text="عدد العمال : " textFill="#b41832">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
